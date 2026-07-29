@@ -1,0 +1,52 @@
+:root {
+
+    /*COLORS*/
+
+    --bg: #faf6f0; /* Background */
+    --bg-alt: #f2ecf5; /* Alternative background */
+    --surface: #ffffff; /* Cards, navbar, forms */
+
+    --border: #e8dff0; /* Borders */
+
+    --text: #1a0a2e; /* Main text */
+    --text-2: #5c4a72; /* Secondary text */
+    --text-3: #9b89a8; /* Tertiary text */
+
+    --accent: #c1387a; /* Accent color */
+    --accent-light: #f5d6e8; /* Soft highlights */
+    --accent-hover: #a02866; /* Button hover state */
+
+    /*FONTS*/
+    --font-title: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* RADIUS, SHADOWS & TRANSITIONS */
+   --radius-sm: 6px; /* Small radius for buttons and tags */
+    --radius-md: 12px; /* Medium radius for cards and containers */
+    --radius-pill: 30px; /* Fully rounded elements like switches */
+
+    --shadow-sm: 0 2px 8px rgba(26, 10, 46, 0.05); /* Subtle shadow for header and small items */
+    --shadow-md: 0 8px 24px rgba(26, 10, 46, 0.08); /* Medium shadow for cards and modals */
+
+    --transition-fast: 0.2s ease; /* Fast transition for hovers */
+    --transition-normal: 0.3s ease; /* Standard transition for themes and smooth changes */
+}
+
+[data-theme="dark"] {
+    --bg: #0f0a1a;
+    --bg-alt: #1a1029;
+    --surface: #1e1330;
+
+    --border: #2e2040;
+
+    --text: #f0eaf8;
+    --text-2: #c4b0d8;
+    --text-3: #7a6890;
+
+    --accent: #e05090;
+    --accent-light: #2a1030;
+    --accent-hover: #f06aa0;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
