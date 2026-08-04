@@ -21,9 +21,10 @@
     --font-body: 'Inter', sans-serif;
 
     /* RADIUS, SHADOWS & TRANSITIONS */
-   --radius-sm: 6px; /* Small radius for buttons and tags */
+    --radius-sm: 6px; /* Small radius for buttons and tags */
     --radius-md: 12px; /* Medium radius for cards and containers */
     --radius-pill: 30px; /* Fully rounded elements like switches */
+    --radius-lg: 24px; /* Large radius for hero image and big cards */
 
     --shadow-sm: 0 2px 8px rgba(26, 10, 46, 0.05); /* Subtle shadow for header and small items */
     --shadow-md: 0 8px 24px rgba(26, 10, 46, 0.08); /* Medium shadow for cards and modals */
