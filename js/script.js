@@ -53,3 +53,16 @@ navLinks.querySelectorAll('a').forEach(link => {
         menuToggle.setAttribute('aria-label', 'Abrir menu');
     });
 });
+
+// ── SKILL BARS (IntersectionObserver) ───────────────────
+const fills = document.querySelectorAll('.skill-fill');
+const skillObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.style.width = e.target.dataset.width + '%';
+            skillObs.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+fills.forEach(f => skillObs.observe(f));
