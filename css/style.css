@@ -296,6 +296,12 @@ nav {
     line-height: 1.5;
 }
 
+.hero-location {
+    font-size: 0.8rem;
+    color: var(--text-3);
+    margin-top: -0.5rem;
+}
+
 .hero-actions {
     display: flex;
     gap: 0.75rem;
@@ -412,9 +418,10 @@ nav {
 
 .about-stats {
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     padding-top: 1.25rem;
     border-top: 1px solid var(--border);
+    align-items: flex-end;
 }
 
 .stat {
@@ -425,14 +432,20 @@ nav {
 
 .stat-number {
     font-family: var(--font-title);
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     font-weight: 800;
     color: var(--accent);
     line-height: 1;
 }
 
+.stat-number--infinity {
+    font-size: 2.1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1;
+}
+
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-3);
 }
 
@@ -518,9 +531,11 @@ nav {
 .skill-fill {
     width: 0;
     height: 100%;
-    background-color: var(--accent);
+    background: linear-gradient(90deg,
+            var(--accent),
+            #df5b98);
     border-radius: inherit;
-    transition: width 1.2s ease;
+    transition: width 1.3s cubic-bezier(.22, .61, .36, 1);
 }
 
 /* EXPERIENCE SECTION */
@@ -552,7 +567,7 @@ nav {
 
 .exp-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateX(4px); 
+    transform: translateX(4px);
 }
 
 .exp-card-header {
